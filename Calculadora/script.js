@@ -1,6 +1,17 @@
 
+function insert(num) {
+    var display = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = display + num;
+}
 
+function clean() {
+    document.getElementById('resultado').innerHTML = "";
+}
 
+function back() {
+    display = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = display.substring(0, display.length -1);
+}
 
 function calcular() {
     
